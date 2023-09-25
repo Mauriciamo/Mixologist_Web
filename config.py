@@ -10,11 +10,11 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', '') or \
         'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    ADMINS = ['brudouchoc@gmail.com']
+    ADMINS = ['@gmail.com']
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = 1
-    MAIL_USERNAME = 'brudouchoc@gmail.com'
-    MAIL_PASSWORD = 'ipznasohqwxxwhqp'
+    MAIL_USERNAME = '@gmail.com'
+    MAIL_PASSWORD = ''
     LANGUAGES = [ 'en', 'es' ]
 
