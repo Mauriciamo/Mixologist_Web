@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<input id="submit" type="button" class="btn btn-primary" value="Back" onclick="history.back(-1)" />
+    <div class="text500">
+    <h1 class="display-4"> ERROR 500 </h1>
+    </div>
+    <br>
+    <br>
+    <div class=" alert500">
+        <div class="alert alert-danger" role="alert">
+            Sorry something went wrong. <br>
+            The server encountered an internal error and was unable to complete your request. <br>
+            Please contact the server administrator at admin@mixologist.com to inform them of the time this error occured,
+            and the actions performed just before this error.
+        </div>
+    </div>     
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="recommendresult">
+    <div class="jumbotron">
+        <h1 class="display-3">{{ cocktail.name.title() }}</h1>
+        <br>
+        <div>
+            <h4 class="display-4">{{ _('Ingredients') }}</h4>
+            <ul>
+                {% for ingr, quantity_unit in cocktail.ingredients %}
+                    {% set quantity, unit = quantity_unit %}
+                    <li>{{ ingr }} {{ quantity }} {{ unit }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <h4 class="display-4">{{ _('Preparation') }}</h4>
+            <ol>
+                {% for step in cocktail.preparation %}
+                <li> {{ step }} </li>
+                {% endfor %}
+            </ol>
+        </div>
+        <hr class="my-4">
+        <div>
+            <hr>
+            {% if ask_eval == 'True' %}
+            <p>{{ _('What did you think of the recommendation?') }}</p>
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+                {{ _(form.options) }}
+                <button type="submit" class="btn btn-primary">{{ _('Submit') }}</button>
+            </form>
+            {% endif %}
+    
+             <div class="text-center" style="padding-top:10px;">
+                {% if error %}
+                    <div class="alert alert-danger" role="alert">
+                        {{ error }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>       
+{% endblock %}

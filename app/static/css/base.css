@@ -1,0 +1,169 @@
+body{background: #fff url(/static/images/background_img.png) center center/cover no-repeat fixed;}
+
+nav.navbar{
+
+  position: fixed;
+  
+  right: 0;
+  
+  left: 0;
+  
+  z-index: 999;
+  
+  }
+
+.Description{color:rgb(114, 121, 118);
+  position: absolute;
+  animation: myAnim 6s ease-in 2s infinite normal forwards;}
+
+.text{font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+
+    @keyframes myAnim {
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+    
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+
+.homedescription{
+  position: absolute;
+  text-align: left;
+  top: 150px;
+  left: 50px;
+}
+
+.title-recommender{color:rgb(45, 48, 46);
+  position: absolute;
+  max-width: 700px;
+  top: 80px;
+  left: 50px;
+  }
+
+.accordion{
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: 800px;
+}
+
+.submit-recommender{
+  position: absolute;
+  text-align: center;
+  top: 325px;
+  left: 1075px;
+}
+
+.form-login{
+  position: absolute;
+  text-align: left;
+  top: 100px;
+  left: 50px;
+}
+
+.form-register{
+  position: absolute;
+  text-align: left;
+  top: 100px;
+  left: 50px;
+}
+
+.text404{
+  position: absolute;
+  text-align: left;
+  top: 100px;
+}
+
+.text500{
+  position: absolute;
+  text-align: left;
+  top: 100px;
+}
+
+.alert500{
+  position: absolute;
+  text-align: left;
+  top: 150px;
+}
+
+.alert404{
+  position: absolute;
+  text-align: left;
+  top: 150px;
+}
+
+.contactusbod{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+}
+
+.MessageBod{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+}
+
+.Cocktailcat{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+  right: 200px;
+}
+
+.recommendresult{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+  right: 300px;
+}
+
+.whoopscard{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+  right: 50px;
+}
+
+.RequesPassRes{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+}
+
+.PassRes{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+}
+
+.messageswarning{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+}
+
+.languageselect{
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  left: 50px;
+}

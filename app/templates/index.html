@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} Mixologist {% endblock %}
+
+{% block app_content %}
+<div class="messageswarning">
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>{{ current_user.username }}!</strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+</div>
+<div class="homedescription">
+    <div class="jumbotron">
+      <h1 class="display-4">{{ _('A Website For Professional Drinkers') }}</h1>
+      <p class="lead">{{ _('The Mixologist website where you can find a wide selection of cocktails') }} {{ _('tailored to your tastes, let us help you make a decision!') }} </p>
+      <hr class="my-4">
+      <div class="Description"> <h2 class="txt" >{{ _('WELCOME TO THE PARTY') }}</h2></div>
+      <br>
+      <br>
+      <br>
+      <a href="{{ url_for('recommender') }}" class="btn btn-outline-secondary" role="button">{{ _('Recommender') }}</a>
+      <a href="{{ url_for('login') }}" class="btn btn-outline-secondary" role="button">{{ _('Login Area') }}</a>
+    </div>
+</div>
+{% endblock %}

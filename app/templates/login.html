@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}                           
+<div class="form-login">
+<h1 class="display-4"> {{ _('Login') }} </h1>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <div>
+        {{ wtf.form_field(form.username, width=100) }}
+    </div>
+    <div>
+        {{ wtf.form_field(form.password, width=100) }}
+    </div>
+    <p>
+        {{ _('Forgot Your Password?') }}
+        <a href="{{ url_for('request_reset_password') }}">{{ _('Click to Reset It') }}</a>
+    </p>
+    <div>
+        <a href="{{ url_for('register') }}" class="btn btn-primary" role="button">{{ _('Register') }}</a>
+        <button type="submit" class="btn btn-primary">{{ _('Submit') }}</button>
+    </div>
+        <br>
+        <div>
+            {{ form.remember_me() }} {{ form.remember_me.label }}
+        </div>
+</form>
+</div>
+{% endblock %}

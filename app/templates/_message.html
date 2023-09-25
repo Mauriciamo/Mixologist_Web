@@ -1,0 +1,16 @@
+<table class="table table-borderless table-dark">
+    <thead>
+      <tr>
+        <th scope="col"> {{ _('Sender Name') }}</th>
+        <th scope="col"> {{ _('Message') }}</th>
+        <th scope="col"> {{ _('Date & Time') }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><p>{{ message.author.username }}</p></th>
+        <td>{{ message.body }}</td>
+        <td>{{ message.timestamp}}</td>
+      </tr>
+    </tbody>
+</table>

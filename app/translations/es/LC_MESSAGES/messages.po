@@ -1,0 +1,178 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-09-20 15:31+0200\n"
+"PO-Revision-Date: 2023-09-20 15:52+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: app/templates/_message.html:4
+msgid "Sender Name"
+msgstr "Nombre Remitente"
+
+#: app/templates/_message.html:5
+msgid "Message"
+msgstr "Mensaje"
+
+#: app/templates/_message.html:6
+msgid "Date & Time"
+msgstr "Fecha & Hora"
+
+#: app/templates/base.html:59
+msgid "Contact Us"
+msgstr "Contactanos"
+
+#: app/templates/base.html:60
+msgid "Logout"
+msgstr "Cerrar-Session"
+
+#: app/templates/base.html:65
+msgid "Cocktails"
+msgstr "Cocteles"
+
+#: app/templates/base.html:68 app/templates/index.html:21
+msgid "Recommender"
+msgstr "Recomendador"
+
+#: app/templates/base.html:71
+msgid "Member Area"
+msgstr "Area de Socios"
+
+#: app/templates/base.html:74 app/templates/messages.html:5
+msgid "Messages"
+msgstr "Mensajes"
+
+#: app/templates/cocktail.html:9
+msgid "Ingredients"
+msgstr "Ingredientes"
+
+#: app/templates/cocktail.html:18
+msgid "Preparation"
+msgstr "Preparacion"
+
+#: app/templates/cocktail.html:29
+msgid "What did you think of the recommendation?"
+msgstr "Que pensaste sobre la recomendacion?"
+
+#: app/templates/cocktail.html:33 app/templates/login.html:21
+#: app/templates/recommender.html:78 app/templates/register.html:30
+msgid "Submit"
+msgstr "Presentar"
+
+#: app/templates/contactus.html:6
+msgid "Send us a Message"
+msgstr "Mandanos un Mensaje"
+
+#: app/templates/contactus.html:25
+msgid "Send Message"
+msgstr "Mandar Mensaje"
+
+#: app/templates/index.html:15
+msgid "WELCOME TO THE PARTY"
+msgstr "BIENVENIDOS A LA FIESTA"
+
+#: app/templates/index.html:16
+msgid "A Website For Professional Drinkers"
+msgstr "Una Pagina Para Bebedores Profesionales"
+
+#: app/templates/index.html:17
+msgid "The Mixologist website where you can find a wide selection of cocktails"
+msgstr "La pagina Mixologist, un sitio con una amplia seleccion de cocteles"
+
+#: app/templates/index.html:18
+msgid "tailored to your tastes, let us help you make a decision!"
+msgstr "creado a tus gustos, dejanos ayudarte hacer una decision"
+
+#: app/templates/index.html:22
+msgid "Login Area"
+msgstr "Zona de Acceso"
+
+#: app/templates/login.html:6
+msgid "Login"
+msgstr "Acceso"
+
+#: app/templates/login.html:16
+msgid "Forgot Your Password?"
+msgstr "Olvidaste tu Contraseña?"
+
+#: app/templates/login.html:17
+msgid "Click to Reset It"
+msgstr "Click para Re-establecer contraseña"
+
+#: app/templates/login.html:20
+msgid "Register"
+msgstr "Registro"
+
+#: app/templates/messages.html:10
+msgid "Newer Messages"
+msgstr "Mensajes Nuevos"
+
+#: app/templates/messages.html:11
+msgid "Older Messages"
+msgstr "Mensajes Antiguos"
+
+#: app/templates/recommender.html:6
+msgid "Find Your Cocktail"
+msgstr "Encuentra tu Coctel"
+
+#: app/templates/recommender.html:7
+msgid ""
+"At Mixologist we prepare for you the finest cocktails to get you ready "
+"for the party, however if\n"
+"          you do not find one that matches your taste you can customize "
+"your own!"
+msgstr "En Mixologist preparamos los mejores cocteles para prepararte " 
+"para la fiesta, sin-embargo\n"
+"          si no encuentras uno a su gusto puedes personalizar el " 
+"tuyo proprio!"
+
+#: app/templates/recommender.html:10
+msgid ""
+"Select the ingredients of your personal cocktail from the list. You may "
+"choose from our selection of fruit drinks, juices, alcoholic\n"
+"          and non-alcoholic beverages. There are also other ingredients "
+"you may choose from such as: cucumber, ginger and ice-cream!"
+msgstr "Elije de la lista de ingredientes componentes para crear su coctel personalizado. Puedes "
+"elegir desde nuestra seleccion de bebidas afrutadas, zumos, bebidas acoholicas\n"
+"          y no alcoholicas. Tambien hay otros ingredients "
+"puedes elegir otros como: pepino, jengibre, y helado!"
+
+#: app/templates/recommender.html:12
+msgid "Browse Catalog"
+msgstr "Descubre Nuestro Catalogo"
+
+#: app/templates/recommender.html:24
+msgid "Fruits"
+msgstr "Frutas"
+
+#: app/templates/recommender.html:38
+msgid "Alcoholic Beverages"
+msgstr "Bebidas Alcoholicas"
+
+#: app/templates/recommender.html:52
+msgid "Non-Alcoholic Beverages"
+msgstr "Bebidas No-Alcoholicas"
+
+#: app/templates/recommender.html:66
+msgid "Other Ingredients"
+msgstr "Otros Ingredientes"
+
+#: app/templates/register.html:7
+msgid "Registration Form"
+msgstr "Formulario de Registro"
+
+#: app/templates/register.html:10
+msgid "Hey you!"
+msgstr "Oye tu!"

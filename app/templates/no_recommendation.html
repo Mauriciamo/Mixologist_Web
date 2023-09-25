@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<div class="whoopscard">
+    <div class="jumbotron">
+        <h1 class="display-4">Whoops!</h1>
+        <p class="lead">It seems we haven't been able to find you a recommendation for the ingredients you have chosen. Send us your list of ingredients via contact us and we will tailor make a cocktail for you!</p>
+        <hr class="my-4">
+        <p>Use the button down below to return to the recommender.</p>
+        <a class="btn btn-primary btn-lg" href="{{url_for('recommender')}}" role="button">Recommender</a>
+    </div>
+</div>    
+{% endblock %}

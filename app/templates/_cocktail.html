@@ -1,0 +1,32 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <table class="table table-hover">
+            <tr>
+                <td width="384px">
+                    <img class="img-fluid responsive" src="https://source.unsplash.com/350x225/?cocktail&we={{cocktail.name}}"
+                         alt="{{cocktail.name}}">
+                </td>
+                <td width="200px">
+                    <a href="{{ url_for('cocktail', name=cocktail.name, ask_eval='False') }}">
+                        <h4>{{ cocktail.name.title() }}</h4>
+                    </a>
+                </td>
+                <td>
+                    <div class="overme">
+                        {% set ns = namespace(found=true) %}
+          
+                        {% for ingr, _ in cocktail.ingredients %}
+                            {% if ns.found == true %}
+                                {% set ns.found = false %}
+                                {{ ingr.title() }}
+                            {% else %}
+                         , {{ ingr.title() }}
+                            {% endif %}
+                        {% endfor %}
+          
+                    </div>
+                </td>
+            </tr>
+          </table>          
+    </div>
+  </div>

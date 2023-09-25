@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<div class="MessageBod">
+    <h1 class="display-4"> {{ _('Messages') }} </h1>
+    {% for message in messages %}
+        {% include '_message.html' %}
+    {% endfor %}
+    <nav>
+        <a href="{{ prev_url or '#' }}" class="btn btn-outline-primary" role="button">{{ _('Newer Messages') }}</a>
+        <a href="{{ next_url or '#' }}" class="btn btn-outline-primary" role="button">{{ _('Older Messages') }}</a>
+    </nav>
+</div>
+{% endblock %}

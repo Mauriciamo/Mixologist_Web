@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<div class="Cocktailcat">   
+    {{ pagination.links }}
+    {% for cocktail in cocktails %}
+        {% include '_cocktail.html' %}
+    {% endfor %}
+    {{ pagination.links }}
+</div> 
+{% endblock %}

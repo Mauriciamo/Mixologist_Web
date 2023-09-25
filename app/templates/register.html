@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+<title>Register</title>
+<div class="form-register">
+    <h1 class="display-4"> {{ _('Registration Form') }} </h1>
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>{{ _('Hey you!') }}</strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+    <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+        <div>
+            {{ wtf.form_field(form.username, width=100) }}
+        </div>
+        <div>
+            {{ wtf.form_field(form.email, width=100) }}
+        </div>
+        <div>
+            {{ wtf.form_field(form.password, width=100) }}
+        </div>
+        <div>
+            {{ wtf.form_field(form.password2, width=100) }}
+        </div>
+        <button type="submit" class="btn btn-primary">{{ _('Submit') }}</button>
+  </form>
+</div>
+{% endblock %}

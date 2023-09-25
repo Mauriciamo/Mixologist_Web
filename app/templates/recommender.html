@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <div class="title-recommender">
+      <div class="jumbotron">
+        <h1 class="display-4">{{ _('Find Your Cocktail') }}</h1>
+        <p class="lead">{{ _('At Mixologist we prepare for you the finest cocktails to get you ready for the party, however if
+          you do not find one that matches your taste you can customize your own!') }}</p>
+        <hr class="my-4">
+        <p>{{ _('Select the ingredients of your personal cocktail from the list. You may choose from our selection of fruit drinks, juices, alcoholic
+          and non-alcoholic beverages. There are also other ingredients you may choose from such as: cucumber, ginger and ice-cream!') }}</p>
+        <a class="btn btn-primary btn-lg" href="{{url_for('cocktails')}}" role="button">{{ _('Browse Catalog') }}</a>
+      </div>
+    <br>
+    </div>
+    <div>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    {{ _('Fruits') }}
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    {{ form.fruits_cb }}
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    {{ _('Alcoholic Beverages') }}
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    {{ form.alco_cb }}
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    {{ _('Non-Alcoholic Beverages') }}
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    {{ form.nonalco_cb }}
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      {{ _('Other Ingredients') }}
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    {{ form.others_cb }}
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit-recommender">
+          <button type="submit" class="btn btn-primary">{{ _('Submit') }}</button>
+        </div>  
+    </form>
+  </div>
+    <div class="text-center">
+        {% if error %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
