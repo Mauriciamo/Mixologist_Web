@@ -1,1 +1,1 @@
-web: flask db upgrade; flask translate compile; gunicorn barkeeper:app
+web: flask db upgrade; gunicorn barkeeper:app
