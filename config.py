@@ -18,4 +18,6 @@ class Config(object):
     MAIL_USERNAME = '@gmail.com'
     MAIL_PASSWORD = ''
     LANGUAGES = [ 'en', 'es' ]
+    
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
 
