@@ -46,3 +46,4 @@ WTForms==2.3.3
 scikit-learn
 gunicorn
 psycopg2-binary
+lxml
